@@ -7,20 +7,6 @@ body {
     cursor: pointer;
 }
 
-.skill-icons {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-  
-  }
-  
-  .skill-icons>img {
-    display: flex;
-    padding: 50px;
-    height: 128px;
-    flex:1;
-    border: 1px solid #ccc;
-  }
+.my-div {
+  width: 50%;
+}
