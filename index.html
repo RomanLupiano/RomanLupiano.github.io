@@ -14,18 +14,19 @@
 </head>
 <body  class="text-light">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
-                <a class="navbar-brand" href="">MRL</a>
+                <a class="navbar-brand" href="#intro">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item d-flex align-items-center">
-                            <a class="btn btn-primary btn-sm mx-1" href="https://drive.google.com/file/d/1KP3yfYQmmgZSiE7-p8PuGCzlpK9lSWlE/view?usp=sharing" target="_blank">CV</a>
-                            <a class="btn btn-primary btn-sm mx-1" href="https://www.linkedin.com/in/marcos-roman-lupiano/" target="_blank">LinkedIn</a>
-                            <a class="btn btn-primary btn-sm mx-1" href="https://github.com/RomanLupiano" target="_blank">GitHub</a>
+                            <a class="nav-link mx-1" href="#projects">Proyectos</a>
+                            <a class="nav-link mx-1" href="#technologies">Tecnologías</a>
+                            <a class="nav-link mx-1" href="#studies">Estudios y certificados</a>
+                            <a class="nav-link mx-1" href="#contact">Contáctame</a>
                         </li>
                     </ul>
                 </div>
@@ -296,9 +297,43 @@
         </section>
 
         <section id="contact">
+            <div class="container">
+                <div class="row">
+                  <div style="width: 50%; margin: 0 auto;">
+                    <div class="well well-sm">
+                      <form action="https://formspree.io/f/xgebyqjz" method="POST" class="form-horizontal">
+                      <fieldset>
+                        <legend class="text-center">Contáctame</legend>
+                        <p>Te invito a contactarme por <a href="https://www.linkedin.com/in/marcos-roman-lupiano/" target="_blank" rel="noreferrer">LinkedIn</a> o por el siguiente formulario:</p>
+                
+                        <!-- Email input-->
+                        <div class="form-group">
+                          <label class="control-label" for="email">Tu Email</label>
+                            <input id="email" name="email" type="email" placeholder="email@ejemplo.com" class="form-control">
+                        </div>
+                
+                        <!-- Message body -->
+                        <div class="form-group my-2">
+                          <label class="control-label" for="message">Tu Mensaje</label>
+                            <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu mensaje aquí" rows="5"></textarea>
+                        </div>
+
+                        <input type="hidden" name="_subject" value="IMPORTANTE: NUEVA ENTRADA DE CONTACTO EN EL PORTFOLIO">
+
+                        <!-- Form actions -->
+                        <div class="form-group text-center my-3">
+                          <div class="text-right">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
             
         </section>
-
     </div>
 
     <footer class="bg-dark text-center text-white">
@@ -308,6 +343,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
