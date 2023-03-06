@@ -10,3 +10,14 @@ body {
 .my-div {
   width: 50%;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  text-align: center;
+}
