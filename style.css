@@ -21,3 +21,8 @@ body {
 .grid-item {
   text-align: center;
 }
+
+.filter-buttons button {
+  margin-right: 10px;
+  cursor: pointer;
+}

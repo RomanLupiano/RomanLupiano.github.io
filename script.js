@@ -23,3 +23,24 @@ window.addEventListener('scroll', function() {
     }
   });
   
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".filter-buttons button");
+    const certificateList = document.querySelector(".certificate-list");
+  
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const filter = button.getAttribute("data-filter");
+  
+        certificateList.querySelectorAll(".certificate").forEach((certificate) => {
+          const category = certificate.getAttribute("data-category");
+  
+          if (filter === "All" || category === filter) {
+            certificate.style.display = "block";
+          } else {
+            certificate.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+  

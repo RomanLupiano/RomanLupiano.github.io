@@ -181,163 +181,178 @@
         <section id="studies">
             <div class="row my-4 text-center">
         
-                <h3>Estudios y Certificados</h3>
+                <h3 class="mb-4">Estudios y Certificados</h3>
 
-                <div class="col-md-4 p-4">
-                    <div class="card bg-secondary card-project">
-                        <embed src="media/certificates/Constancia.jpeg" alt="Todo sobre la web con PHP" type="" class="card-img-top">
+                <div class="filter-buttons">
+                    <button class="btn btn-outline-primary" data-filter="All">Mostrar Todos</button>
+                    <button class="btn btn-outline-secondary" data-filter="General">General</button>
+                    <button class="btn btn-outline-success" data-filter="Python">Python</button>
+                    <button class="btn btn-outline-warning" data-filter="Databases">Bases de datos</button>
+                    <button class="btn btn-outline-info" data-filter="English">Inglés</button>
+                    <button class="btn btn-outline-light" data-filter="Otros">Otros</button>
+                </div>
+                  
+                  <div class="certificate-list row my-2 text-center">
+
+                    <div class="certificate col-md-4 p-4" data-category="General">
+                        <div class="card bg-secondary card-project">
+                            <embed src="media/certificates/Constancia.jpeg" alt="Ingeniería en Sistemas" type="" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Ingeniería en Sistemas</h2>
+                                <p>2021 - Actualidad</p>
+                                
+                                <a href="https://drive.google.com/file/d/1HJrqDh01E0dxVdgErA0w0G1O0h-G-wnl/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Constancia</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="English">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Cui-uba_nivel6.jpg" alt="Inglés nivel 6 - A2.2" type="" class="card-img-top">
                             <div class="card-body">
-                            <h2>Ingeniería en Sistemas</h2>
-                            <p>2021 - Actualidad</p>
-                            
-                            <a href="https://drive.google.com/file/d/1HJrqDh01E0dxVdgErA0w0G1O0h-G-wnl/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Constancia</a>
+                                <h2>Nivel 6 de Inglés - Equivalente A2.2</h2>
+                                <p>1 de Septiembre de 2023</p>
+                                
+                                <a href="https://drive.google.com/file/d/1uGlz_Ti5Ql5iJX-iHrtmRkdcyrfBLNhN/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/Cui-uba_nivel6.jpg" alt="Inglés nivel 6 - A2.2" type="" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Nivel 6 de Inglés - Equivalente A2.2</h2>
-                            <p>1 de Septiembre de 2023</p>
-                            
-                            <a href="https://drive.google.com/file/d/1uGlz_Ti5Ql5iJX-iHrtmRkdcyrfBLNhN/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/C++_intermediate.jpg" alt="C++ Intermediate" type="" class="card-img-top">
-                        <div class="card-body">
-                            <h2>C++ Intermediate</h2>
-                            <p>24 de junio de 2023</p>
-                            
-                            <a href="https://www.sololearn.com/certificates/CC-XKNS67XS" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/SQL_consultas.jpg" alt="SQL: consultas básicas a complejas" type="" class="card-img-top">
-                        <div class="card-body">
-                            <h2>SQL: consultas básicas a complejas</h2>
-                            <p>28 de febrero de 2023</p>
-                            
-                            <a href="https://www.udemy.com/certificate/UC-344ac04a-0c8e-4351-a921-98d10a9aa425/" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/Python_Data_structures.png" alt="Python Data Structures" type="" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Python Data Structures</h2>
-                            <p>17 de enero de 2023</p>
-                            
-                            <a href="https://www.sololearn.com/certificates/CT-TZBT1DMK" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-secondary card-project">
-                        <embed src="media/certificates/CursoInglesb1_page-0001.jpg" alt="Curso Inglés B1" class="card-img-top">
+    
+                    <div class="certificate col-md-4 p-4" data-category="Otros">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/C++_intermediate.jpg" alt="C++ Intermediate" type="" class="card-img-top">
                             <div class="card-body">
-                            <h2>Curso de Inglés B1</h2>
-                            <p>De Septiembre a Diciembre de 2022</p>
-                            
-                            <a href="https://drive.google.com/file/d/1INw-VvWlGDCxDsFcD9sr8pBBJ-jjn_vm/view" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                <h2>C++ Intermediate</h2>
+                                <p>24 de junio de 2023</p>
+                                
+                                <a href="https://www.sololearn.com/certificates/CC-XKNS67XS" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="Databases">
+                        <div class="card bg-black card-project" >
+                            <embed src="media/certificates/SQL_consultas.jpg" alt="SQL: consultas básicas a complejas" type="" class="card-img-top">
+                            <div class="card-body">
+                                <h2>SQL: consultas básicas a complejas</h2>
+                                <p>28 de febrero de 2023</p>
+                                
+                                <a href="https://www.udemy.com/certificate/UC-344ac04a-0c8e-4351-a921-98d10a9aa425/" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="Python">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Python_Data_structures.png" alt="Python Data Structures" type="" class="card-img-top">
+                            <div class="card-body">
+                                <h2>Python Data Structures</h2>
+                                <p>17 de enero de 2023</p>
+                                
+                                <a href="https://www.sololearn.com/certificates/CT-TZBT1DMK" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="English">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/CursoInglesb1_page-0001.jpg" alt="Curso Inglés B1" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Curso de Inglés B1</h2>
+                                <p>De Septiembre a Diciembre de 2022</p>
+                                
+                                <a href="https://drive.google.com/file/d/1INw-VvWlGDCxDsFcD9sr8pBBJ-jjn_vm/view" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4"  data-category="Otros">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Marcos Román Lupiano - 2022-11-29-1.png" alt="Todo sobre la web con PHP" type="" class="card-img-top">
+                            <div class="card-body">
+                                <h2>Todo sobre la web con PHP</h2>
+                                <p>29 de Noviembre del 2022</p>
+                                
+                                <a href="https://www.mastermind.ac/certificates/xtwovtlqmy" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="General">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/argentina_programa_2022-1.png" alt="Argentina Programa 4.0 SeProgramar" type="" class="card-img-top">
+                            <div class="card-body">
+                                <h2>Argentina Programa 4.0 SeProgramar</h2>
+                                <p>13 de Octubre del 2022</p>
+                                
+                                <a href="https://seprogramar.inti.gob.ar/inti/certificates/verify/DnlR6DSakExvfOJD" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate col-md-4 p-4" data-category="General">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Curso de programación orientada a objetos - Marcos Román Lupiano-1.png" alt="Curso de programación orientada a objetos" type="" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Curso de programación orientada a objetos</h2>
+                                <p>10 de Mayo del 2022</p>
+                                
+                                <a href="https://drive.google.com/file/d/1nvan9Xc55eLqUuDORmpzEClYA_fbKNBl/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="Python">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Intermediate_python.png" alt="Intermediate Python" type="" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Intermediate Python</h2>
+                                <p>18 de abril de 2022</p>
+                                
+                                <a href="https://www.sololearn.com/certificates/CT-K8KKYKEM" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="Python">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Curso de Python - Marcos Román Lupiano.png" alt="Curso de Python" type="" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Curso de Python</h2>
+                                <p>De Enero a Abril de 2022</p>
+                                
+                                <a href="https://www.coderhouse.com/certificados/6292b97b2b26090024639669" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="Python">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Python_udemy.jpg" alt="Aprende a Programar con Python. Practicando con proyectos" type="" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Aprende a Programar con Python. Practicando con proyectos</h2>
+                                <p>9 de Marzo de 2022</p>
+                                
+                                <a href="https://www.udemy.com/certificate/UC-a0b109fd-6994-411b-80cc-ce1a4b78aec4/" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="certificate col-md-4 p-4" data-category="General">
+                        <div class="card bg-black card-project">
+                            <embed src="media/certificates/Asistente-en-informatica.png" alt="Asistente en informatica" class="card-img-top">
+                                <div class="card-body">
+                                <h2>Asistente en informática</h2>
+                                <p>2018 - 2020</p>
+                                
+                                <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
 
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/Marcos Román Lupiano - 2022-11-29-1.png" alt="Todo sobre la web con PHP" type="" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Todo sobre la web con PHP</h2>
-                            <p>29 de Noviembre del 2022</p>
-                            
-                            <a href="https://www.mastermind.ac/certificates/xtwovtlqmy" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/argentina_programa_2022-1.png" alt="Argentina Programa 4.0 SeProgramar" type="" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Argentina Programa 4.0 SeProgramar</h2>
-                            <p>13 de Octubre del 2022</p>
-                            
-                            <a href="https://seprogramar.inti.gob.ar/inti/certificates/verify/DnlR6DSakExvfOJD" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/Curso de programación orientada a objetos - Marcos Román Lupiano-1.png" alt="Todo sobre la web con PHP" type="" class="card-img-top">
-                            <div class="card-body">
-                            <h2>Curso de programación orientada a objetos</h2>
-                            <p>10 de Mayo del 2022</p>
-                            
-                            <a href="https://drive.google.com/file/d/1nvan9Xc55eLqUuDORmpzEClYA_fbKNBl/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/Intermediate_python.png" alt="Intermediate Python" type="" class="card-img-top">
-                            <div class="card-body">
-                            <h2>Intermediate Python</h2>
-                            <p>18 de abril de 2022</p>
-                            
-                            <a href="https://www.sololearn.com/certificates/CT-K8KKYKEM" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-secondary card-project">
-                        <embed src="media/certificates/Curso de Python - Marcos Román Lupiano.png" alt="Todo sobre la web con PHP" type="" class="card-img-top">
-                            <div class="card-body">
-                            <h2>Curso de Python</h2>
-                            <p>De Enero a Abril de 2022</p>
-                            
-                            <a href="https://www.coderhouse.com/certificados/6292b97b2b26090024639669" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <embed src="media/certificates/Python_udemy.jpg" alt="Aprende a Programar con Python. Practicando con proyectos" type="" class="card-img-top">
-                            <div class="card-body">
-                            <h2>Aprende a Programar con Python. Practicando con proyectos</h2>
-                            <p>9 de Marzo de 2022</p>
-                            
-                            <a href="https://www.udemy.com/certificate/UC-a0b109fd-6994-411b-80cc-ce1a4b78aec4/" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 p-4">
-                    <div class="card bg-secondary card-project">
-                        <embed src="media/certificates/Asistente-en-informatica.png" alt="Asistente en informatica" class="card-img-top">
-                            <div class="card-body">
-                            <h2>Asistente en informática</h2>
-                            <p>2018 - 2020</p>
-                            
-                            <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </section>
