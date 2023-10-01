@@ -22,6 +22,18 @@ body {
   text-align: center;
 }
 
+.icon {
+  text-align: center;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  .icon {
+      height: 60px;
+      
+  }
+}
+
 .filter-buttons button {
   margin-right: 10px;
   cursor: pointer;
