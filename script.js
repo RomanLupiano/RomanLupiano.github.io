@@ -14,9 +14,6 @@ window.addEventListener('scroll', function() {
     } else if (window.pageYOffset >= seccion3.offsetTop && window.pageYOffset < seccion4.offsetTop) {
         navbar.classList.add('fixed-top');
         navbar.classList.remove('absolute-top');
-    } else if (window.pageYOffset >= seccion4.offsetTop) {
-      navbar.classList.remove('fixed-top');
-      navbar.classList.add('absolute-top');
     } else {
       navbar.classList.remove('fixed-top');
       navbar.classList.remove('absolute-top');
