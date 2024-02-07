@@ -1,11 +1,9 @@
 body {
     background: #090909;
-    padding-top:20px;
 }
 
 .card-project:hover {
     border: 1px solid #fff;
-    cursor: pointer;
 }
 
 .my-div {
@@ -32,9 +30,22 @@ body {
       height: 60px;
       
   }
+
 }
 
 .filter-buttons button {
   margin-right: 10px;
   cursor: pointer;
+}
+
+.navbar{
+  backdrop-filter: blur(20px);
+  --bs-bg-opacity: .5;
+  top: 0;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
 }
