@@ -2,10 +2,6 @@ body {
     background: #090909;
 }
 
-.card-project:hover {
-    border: 1px solid #fff;
-}
-
 .my-div {
   width: 50%;
 }
@@ -14,6 +10,11 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
+}
+
+.three-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item {
