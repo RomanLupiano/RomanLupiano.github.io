@@ -51,3 +51,26 @@ body {
   height: auto;
   max-width: 200px;
 }
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  padding: 1%;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: 1px white;
+  margin-bottom: 10px;
+}
+
+.list-data{
+  grid-column: 1 / 8;
+}
+
+.list-btn{
+  grid-column: 8 / 11;
+}
+
+section{
+  margin-bottom: 50px;
+}
