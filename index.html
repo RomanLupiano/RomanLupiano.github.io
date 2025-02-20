@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta name="description" content="Descubre mi portfolio de desarrollo backend.">
     <meta name="keywords" content="Marcos Román Lupiano, Portfolio, Proyectos, Desarrollador de software, Python Developer, Desarrollo web"/>
@@ -27,7 +27,6 @@
                             <a class="nav-link mx-1" href="#projects">Proyectos</a>
                             <a class="nav-link mx-1" href="#technologies">Tecnologías</a>
                             <a class="nav-link mx-1" href="#studies">Estudios y certificados</a>
-                            <a class="nav-link mx-1" href="#contact">Contáctame</a>
                         </li>
                     </ul>
                 </div>
@@ -44,11 +43,14 @@
             
                 <div class="my-auto mx-auto mx-md-3">
                     <h1><strong>Marcos Román Lupiano</strong></h1>
-                    <h2 class="fs-3 text">Estudiante de ingeniería en Sistemas</h2>
-                    <p> ¡Hola! 👋 Soy Román, estudiante de Ingeniería de Sistemas. Me gusta realizar proyectos y cursos que podés ver a continuación.
+                    <h2 class="fs-3 text">Estudiante de ingeniería en Sistemas | Desarrollador Web Backend</h2>
+                    <p>¡Hola! 👋 Soy Román, estudiante de Ingeniería en Sistemas con interés en desarrollo backend y arquitectura de software.  
+                        Estoy en constante aprendizaje a través de proyectos y cursos, siempre buscando mejorar y explorar nuevas herramientas.
                     </p>
                     <a class="btn btn-primary btn-lg rounded-2 my-2" href="https://www.linkedin.com/in/marcos-roman-lupiano/" target="_blank">Ver LinkedIn</a>
                     <a class="btn btn-primary btn-lg rounded-2 my-2" href="https://github.com/RomanLupiano" target="_blank">Ver GitHub</a>
+                    <a class="btn btn-primary btn-lg rounded-2 my-2" href="https://github.com/RomanLupiano" target="_blank">Ver CV</a>
+
                 </div>
             </header>   
         </section>
@@ -57,29 +59,50 @@
             <div class="row my-4 text-center">
         
                 <h3>Mis proyectos</h3>
-                
+                <div class="col-md-4 p-4">
+                    <div class="card bg-black card-project">
+                        <img src="" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2>Planificador Universitario</h2>
+                            <p>Aplicación web que busca ayudar a estudiantes a planificar su progreso académico. Organizando sus materias aprobadas, cursadas y correlatividades. 
+                                <br> Django | PostgreSQL | React                         
+                            </p>
+
+                            <a href="https://github.com/RomanLupiano/NReinas" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
+                            <a href="https://romanlupiano.github.io/NReinas/" class="btn btn-light rounded-3 btn-sm" target="_blank">Visitar la página</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-4">
+                    <div class="card bg-black card-project">
+                        <img src="" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2>Red Social</h2>
+                            <p>Backend de una red social basado en microservicios, con autenticación de usuarios y gestión de publicaciones.  
+                                Integrado con Google Cloud Storage para almacenamiento de imágenes.
+                                
+                                <br>Django Rest Framework | FastAPI | Google Cloud Platform | PostgreSQL | MongoDB 
+                            </p>
+
+                            <a href="https://github.com/RomanLupiano/NReinas" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-4 p-4">
                     <div class="card bg-black card-project">
                         <img src="media/projects/nreinas.webp" alt="El Problema de las N Reinas" class="card-img-top">
                         <div class="card-body">
                             <h2>El Problema de las N Reinas</h2>
-                            <p>En esta página se puede ver de manera animada cómo se resuelve el tablero.  <br> HTML - CSS - Javascript</p>
+                            <p>Simulador del problema de las N reinas, se puede ver cómo el algoritmo busca y rechaza posibles soluciones del tablero.
+                                <br> HTML | CSS | Javascript
+                            </p>
 
-                            <a href="https://github.com/RomanLupiano/NReinas" class="btn btn-light rounded-3 btn-sm" target="_blank">Revisar el código</a>
+                            <a href="https://github.com/RomanLupiano/NReinas" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
                             <a href="https://romanlupiano.github.io/NReinas/" class="btn btn-light rounded-3 btn-sm" target="_blank">Visitar la página</a>
 
-                        </div>
-                    </div>
-                </div>  
-            
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <img src="media/projects/gestionescolar.webp" alt="GestionEscolar" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Gestión Escolar</h2>
-                            <p>Aplicación web para gestionar alumnos y empleados de una escuela primaria ficticia. Hecha en equipo con otras dos personas. <br> Django - SQLite3 - HTML - CSS </p>
-                            
-                            <a href="https://github.com/BenjaminRoldan/Repo3" class="btn btn-light rounded-3 btn-sm" target="_blank">Revisar el código</a>
                         </div>
                     </div>
                 </div>
@@ -89,10 +112,12 @@
                         <img src="media/projects/passwordgenerator.webp" alt="PasswordGenerator" class="card-img-top">
                         <div class="card-body">
                             <h2>Password Generator</h2>
-                            <p>Generador de contraseñas de una logitud determinada, 
-                                pudiendo elegir si se quiere añadir mayúsculas, carácteres especiales y/o números. <br> HTML - Bootstrap - Javascript </p>
+                            <p>Generador de contraseñas de una logitud determinable, 
+                                pudiendo elegir si se quiere añadir mayúsculas, carácteres especiales y/o números. 
+                                <br> HTML | CSS/Bootstrap | Javascript 
+                            </p>
                             
-                            <a href="https://github.com/RomanLupiano/Password-Generator" class="btn btn-light rounded-3 btn-sm" target="_blank">Revisar el código</a>
+                            <a href="https://github.com/RomanLupiano/Password-Generator" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
                             <a href="https://romanlupiano.github.io/Password-Generator/" class="btn btn-light rounded-3 btn-sm" target="_blank">Visitar la página</a>
                         </div>
                     </div>
@@ -103,9 +128,9 @@
         </section>
         
         <section id="technologies">
-            <h3 class=" text-center"> Tecnologías utilizadas</h3>
-
-
+            <h3 class=" text-center">Tecnologías utilizadas</h3>
+            
+            <h4 class="tech-category">Backend</h4>
             <div class="my-4 grid-container">
                 <div class="grid-item">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" height="100" class="icon my-2">
@@ -120,43 +145,49 @@
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="media/tech/flask-svgrepo-com.svg" alt="Flask" height="100" class="icon my-2">
+                    <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="Flask" height="100" class="icon my-2">
                         <div class="card-body">
-                            <h4>Flask</h4>
+                            <h4>FastAPI</h4>
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.freepnglogos.com/uploads/logo-mysql-png/logo-mysql-mysql-logo-png-images-are-download-crazypng-21.png" alt="MySQL" height="100" class="icon my-2">
+                    <img src="https://www.svgrepo.com/show/353805/google-cloud.svg" alt="Flask" height="100" class="icon my-2">
                         <div class="card-body">
-                            <h4>MySQL</h4>
+                            <h4>Google Cloud Platform</h4>
+                        </div>
+                </div>
+            </div>
+                
+            <h4 class="tech-category">Bases de datos</h4>
+            <div class="my-4 grid-container">
+                <div class="grid-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="html5" height="100" class="icon my-2">
+                    <div class="card-body">
+                        <h4>PostgreSQL</h4>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="css" height="100" class="icon my-2">
+                        <div class="card-body">
+                            <h4>MongoDB</h4>
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="html5" height="100" class="icon my-2">
+                    <img src="https://www.svgrepo.com/show/354272/redis.svg" alt="Flask" height="100" class="icon my-2">
                         <div class="card-body">
-                            <h4>HTML</h4>
+                            <h4>Redis</h4>
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="css" height="100" class="icon my-2">
+                    <img src="https://www.svgrepo.com/show/374094/sqlite.svg" alt="bootstrap" height="100" class="icon my-2">
                         <div class="card-body">
-                            <h4>CSS</h4>
+                            <h4>SQLite</h4>
                         </div>
                 </div>
-                <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" alt="bootstrap" height="100" class="icon my-2">
-                        <div class="card-body">
-                            <h4>Bootstrap</h4>
-                        </div>
-                </div>
-                <div class="grid-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="css" height="100" class="icon my-2">
-                        <div class="card-body">
-                            <h4>Javascript</h4>
-                        </div>
-                </div>
-              </div>
-              <div class="three-grid-container">
+            </div>
+
+            <h4 class="tech-category">Herramientas</h4>
+              <div class="my-4 grid-container">
                 <div class="grid-item">
                     <img src="https://www.svgrepo.com/show/452210/git.svg" alt="Git" height="100" class="icon my-2">
                     <div class="card-body">
@@ -170,12 +201,39 @@
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="media/tech/postman-icon.svg" alt="Postman" height="100" class="icon my-2">
+                    <img src="https://www.svgrepo.com/show/452192/docker.svg" alt="GitHub" height="100" class="icon my-2">
                     <div class="card-body">
-                        <h4>Postman</h4>
+                        <h4>Docker</h4>
                     </div>
                 </div>
+                <div class="grid-item">
+                    <img src="https://www.svgrepo.com/show/448236/linux.svg" alt="Postman" height="100" class="icon my-2">
+                    <div class="card-body">
+                        <h4>Linux</h4>
+                    </div>
+                </div>
+            </div>
 
+            <h4 class="tech-category">Frontend</h4>
+            <div class="my-4 grid-container">
+                <div class="grid-item">
+                    <img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="html5" height="100" class="icon my-2">
+                    <div class="card-body">
+                        <h4>HTML</h4>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="css" height="100" class="icon my-2">
+                    <div class="card-body">
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.svgrepo.com/show/353925/javascript.svg" alt="bootstrap" height="100" class="icon my-2">
+                    <div class="card-body">
+                        <h4>Javascript</h4>
+                    </div>
+                </div>
             </div>
     
         </section>
@@ -186,17 +244,9 @@
         
                 <h3 class="mb-4">Estudios y Certificados</h3>
 
-                <div class="filter-buttons">
-                    <button class="btn btn-outline-primary" data-filter="All">Mostrar Todos</button>
-                    <button class="btn btn-outline-light" data-filter="General">General</button>
-                    <button class="btn btn-outline-success" data-filter="Python">Python</button>
-                    <button class="btn btn-outline-warning" data-filter="Databases">Bases de datos</button>
-                    <button class="btn btn-outline-info" data-filter="English">Inglés</button>
-                </div>
-                  
+                
                   <div class="certificate-list row my-2 text-center">
-
-                    <div class="certificate col-md-4 p-4" data-category="General">
+                    <div class="certificate col-md-3 p-3" data-category="General">
                         <div class="card bg-secondary card-project">
                             <embed src="media/certificates/exaunicen.webp" alt="Ingeniería en Sistemas" type="" class="card-img-top">
                                 <div class="card-body">
@@ -207,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="certificate col-md-4 p-4" data-category="General">
+                    <div class="certificate col-md-3 p-3" data-category="General">
                         <div class="card bg-black card-project">
                             <embed src="media/certificates/CursoDocker.webp" alt="Curso Profesional de Docker" type="" class="card-img-top">
                                 <div class="card-body">
@@ -226,7 +276,7 @@
                         </div>
                     </div>
 
-                    <div class="certificate col-md-4 p-4" data-category="Databases">
+                    <div class="certificate col-md-3 p-3" data-category="Databases">
                         <div class="card bg-black card-project">
                             <embed src="media/certificates/TallerReplicacionBD1.webp" alt="Taller de replicación de bases de datos SQL" type="" class="card-img-top">
                                 <div class="card-body">
@@ -239,7 +289,7 @@
                         </div>
                     </div>
 
-                    <div class="certificate col-md-4 p-4" data-category="General">
+                    <div class="certificate col-md-3 p-3" data-category="General">
                         <div class="card bg-black card-project">
                             <embed src="media/certificates/CursoGoogleCloud.webp" alt="Curso Google Cloud Platform" type="" class="card-img-top">
                                 <div class="card-body">
@@ -250,32 +300,8 @@
                                 </div>
                         </div>
                     </div>
-
-                    <div class="certificate col-md-4 p-4" data-category="English">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/ingles-b1-cui-uba.webp" alt="Inglés nivel 7 - B1.1" type="" class="card-img-top">
-                            <div class="card-body">
-                                <h2>Nivel 7 de Inglés - Equivalente B1.1</h2>
-                                <p>1 de diciembre de 2023</p>
-                                
-                                <a href="https://drive.google.com/file/d/1gG1fFm3ljr9BnAvm-2lpOIKSS8Nb04Rw/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
     
-                    <div class="certificate col-md-4 p-4" data-category="English">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/cui-uba-nivel6.webp" alt="Inglés nivel 6 - A2.2" type="" class="card-img-top">
-                            <div class="card-body">
-                                <h2>Nivel 6 de Inglés - Equivalente A2.2</h2>
-                                <p>1 de septiembre de 2023</p>
-                                
-                                <a href="https://drive.google.com/file/d/1uGlz_Ti5Ql5iJX-iHrtmRkdcyrfBLNhN/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="certificate col-md-4 p-4" data-category="Databases">
+                    <div class="certificate col-md-3 p-3" data-category="Databases">
                         <div class="card bg-black card-project" >
                             <embed src="media/certificates/sql-consultas.webp" alt="SQL: consultas básicas a complejas" type="" class="card-img-top">
                             <div class="card-body">
@@ -287,67 +313,7 @@
                         </div>
                     </div>
     
-                    <div class="certificate col-md-4 p-4" data-category="Python">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/python-data-structures.webp" alt="Python Data Structures" type="" class="card-img-top">
-                            <div class="card-body">
-                                <h2>Python Data Structures</h2>
-                                <p>17 de enero de 2023</p>
-                                
-                                <a href="https://www.sololearn.com/certificates/CT-TZBT1DMK" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="certificate col-md-4 p-4" data-category="English">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/cursoinglesb1.webp" alt="Curso Inglés B1" class="card-img-top">
-                                <div class="card-body">
-                                <h2>Curso de Inglés B1</h2>
-                                <p>De septiembre a diciembre de 2022</p>
-                                
-                                <a href="https://drive.google.com/file/d/1INw-VvWlGDCxDsFcD9sr8pBBJ-jjn_vm/view" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="certificate col-md-4 p-4" data-category="General">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/argentina-programa.webp" alt="Argentina Programa 4.0 SeProgramar" type="" class="card-img-top">
-                            <div class="card-body">
-                                <h2>Argentina Programa 4.0 SeProgramar</h2>
-                                <p>13 de octubre de 2022</p>
-                                
-                                <a href="https://seprogramar.inti.gob.ar/inti/certificates/verify/DnlR6DSakExvfOJD" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="certificate col-md-4 p-4" data-category="General">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/curso-de-programacion-orientada-a-objetos.webp" alt="Curso de programación orientada a objetos" type="" class="card-img-top">
-                                <div class="card-body">
-                                <h2>Curso de programación orientada a objetos</h2>
-                                <p>10 de mayo de 2022</p>
-                                
-                                <a href="https://drive.google.com/file/d/1nvan9Xc55eLqUuDORmpzEClYA_fbKNBl/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="certificate col-md-4 p-4" data-category="Python">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/intermediate-python.webp" alt="Intermediate Python" type="" class="card-img-top">
-                                <div class="card-body">
-                                <h2>Intermediate Python</h2>
-                                <p>18 de abril de 2022</p>
-                                
-                                <a href="https://www.sololearn.com/certificates/CT-K8KKYKEM" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="certificate col-md-4 p-4" data-category="Python">
+                    <div class="certificate col-md-3 p-3" data-category="Python">
                         <div class="card bg-black card-project">
                             <embed src="media/certificates/curso-de-python-marcos-roman-lupiano.webp" alt="Curso de Python" type="" class="card-img-top">
                                 <div class="card-body">
@@ -364,28 +330,12 @@
                         </div>
                     </div>
     
-                    <div class="certificate col-md-4 p-4" data-category="Python">
-                        <div class="card bg-black card-project">
-                            <embed src="media/certificates/python-udemy.webp" alt="Aprende a Programar con Python. Practicando con proyectos" type="" class="card-img-top">
-                                <div class="card-body">
-                                <h2>Aprende a Programar con Python. Practicando con proyectos</h2>
-                                <p>9 de marzo de 2022</p>
-                                
-                                <a href="https://www.udemy.com/certificate/UC-a0b109fd-6994-411b-80cc-ce1a4b78aec4/" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="certificate col-md-4 p-4" data-category="General">
+                    <div class="certificate col-md-3 p-3" data-category="General">
                         <div class="card bg-black card-project">
                             <embed src="media/certificates/asistente-en-informatica.webp" alt="Asistente en informatica" class="card-img-top">
                                 <div class="card-body">
                                 <h2>Asistente en informática</h2>
-                                <p>Itinerario Formativo en los últimos tres años de la secundaria sobre Asistencia en Informática.
-                                    Habilidades aprendidas:
-                                    <br>- Microsoft Office: Excel, Word y Powerpoint.
-                                    <br>- Instalación, configuración, mantenimiento y reparación de computadoras.
-                                    <br>- Introducción a la programación con Visual Basic.</p>
+                                <p>Itinerario Formativo en los últimos tres años de la secundaria sobre Informática.
                                 <p>2018 - 2020</p>
                                 
                                 <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
@@ -393,50 +343,7 @@
                         </div>
                     </div>
                   </div>
-                  
-
-                
-
             </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                  <div style="width: 50%; margin: 0 auto;">
-                    <div class="well well-sm">
-                      <form action="https://formspree.io/f/xgebyqjz" method="POST" class="form-horizontal">
-                      <fieldset>
-                        <legend class="text-center">Contáctame</legend>
-                        <p>Te invito a contactarme por <a href="https://www.linkedin.com/in/marcos-roman-lupiano/" target="_blank" rel="noreferrer">LinkedIn</a> o por el siguiente formulario:</p>
-                
-                        <!-- Email input-->
-                        <div class="form-group">
-                          <label class="control-label" for="email">Tu Email</label>
-                            <input id="email" name="email" type="email" placeholder="email@ejemplo.com" class="form-control" required>
-                        </div>
-                
-                        <!-- Message body -->
-                        <div class="form-group my-2">
-                          <label class="control-label" for="message">Tu Mensaje</label>
-                            <textarea class="form-control" id="message" name="message" placeholder="Ingresa tu mensaje aquí." rows="5" required></textarea>
-                        </div>
-
-                        <input type="hidden" name="_subject" value="IMPORTANTE: NUEVA ENTRADA DE CONTACTO EN EL PORTFOLIO">
-
-                        <!-- Form actions -->
-                        <div class="form-group text-center my-3">
-                          <div class="text-right">
-                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                          </div>
-                        </div>
-                      </fieldset>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            
         </section>
     </div>
 

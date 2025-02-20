@@ -9,9 +9,18 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 10px;
+  background-color: #090909;
+  justify-items: center;
 }
+
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .three-grid-container {
   display: grid;
@@ -35,9 +44,8 @@ body {
 
 }
 
-.filter-buttons button {
-  margin-right: 10px;
-  cursor: pointer;
+.tech-category{
+  margin-left: 2%;
 }
 
 .navbar{
@@ -49,5 +57,5 @@ body {
 .responsive {
   width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 300px;
 }
