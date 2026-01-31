@@ -24,6 +24,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link mx-1" href="#experience">Experiencia</a>
                             <a class="nav-link mx-1" href="#projects">Proyectos</a>
                             <a class="nav-link mx-1" href="#technologies">Tecnologías</a>
                             <a class="nav-link mx-1" href="#studies">Estudios y certificados</a>
@@ -35,77 +36,102 @@
     </header>
 
     <main class="container p-4">
+
         <section id="intro">
-            <header class="bg-black rounded-5 d-flex flex-column flex-md-row">
-                <div class="m-2 img">
-                    <img src="media/profile.jpeg" alt="My photo" class="rounded-5 responsive">
+            <header class="bg-black rounded-5 d-flex flex-column flex-md-row align-items-center p-4">
+                
+                <div class="img-container flex-shrink-0 mb-3 mb-md-0">
+                    <img src="media/profile.jpeg" alt="Una foto mía" class="rounded-5 responsive shadow">
                 </div>
             
-                <div class="my-auto mx-auto mx-md-3">
+                <div class="flex-grow-1 ms-md-4 text-center text-md-start">
                     <h1><strong>Marcos Román Lupiano</strong></h1>
-                    <h2 class="fs-3 text">Estudiante de ingeniería en Sistemas</h2>
-                    <p>¡Hola! 👋 Soy Román, estudiante de Ingeniería en Sistemas con interés en desarrollo backend y arquitectura de software.  
+                    <h2 class="fs-3 text">Estudiante de Ingeniería en Sistemas</h2>
+                    <p>¡Hola! 👋 Soy Román, estudiante de Ingeniería en Sistemas con interés en desarrollo backend, sistemas distribuidos y arquitectura de software.  
                         Estoy en constante aprendizaje a través de proyectos y cursos, buscando mejorar y explorar nuevas herramientas.
                     </p>
-                    <a class="btn btn-primary btn-lg rounded-2 my-2" href="https://www.linkedin.com/in/marcos-roman-lupiano/" target="_blank">Ver LinkedIn</a>
-                    <a class="btn btn-primary btn-lg rounded-2 my-2" href="https://github.com/RomanLupiano" target="_blank">Ver GitHub</a>
-
+                    
+                    <div class="mt-3">
+                        <a class="btn btn-primary btn-lg rounded-2 me-2" href="https://www.linkedin.com/in/marcos-roman-lupiano/" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
+                        <a class="btn btn-primary btn-lg rounded-2" href="https://github.com/RomanLupiano" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+                    </div>
                 </div>
             </header>   
         </section>
+
+        <section id="experience" class="py-5">
+            <div class="row text-center mb-4">
+                <h3>Experiencia Laboral</h3>
+            </div>
+            <div class="row justify-content-center"> 
+                <div class="col-12">
+                    <div class="card bg-black text-light p-3">
+                        <div class="card-body text-start"> <h4 class="card-title">Ayudante de Cátedra</h4>
+                            <h5 class="text-muted">Universidad Nacional del Centro de la Pcia. de Bs. As. | Mar 2023 - Presente</h5>
+                            <hr>
+                            <p class="card-text">
+                                Introducción a la Programación I y II, Introducción a los Sistemas Informáticos. <br>
+                                Acompaño a estudiantes en la resolución de problemas algorítmicos, revisión de código y adopción de buenas prácticas de programación. <br>
+                                Participo en correcciones, seguimiento del progreso y apoyo en clases prácticas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section id="projects">
             <div class="row my-4 text-center">
         
                 <h3>Mis proyectos</h3>
-                <div class="col-md-4 p-4">
+                <div class="col-12 col-md-6 col-lg-4 p-4">
+                    <div class="card bg-black card-project">
+                        <img src="media/projects/pollchat2.png" alt="Captura del proyecto PollChat, servidor de chat en C usando poll" class="card-img-top">
+                        <div class="card-body">
+                            <h2>PollChat</h2>
+                            <p>Servidor de Chat en C, desarrollado para profundizar en fundamentos de sistemas, 
+                                incluyendo manejo de sockets, concurrencia sin hilos, control explícito de recursos y tolerancia a errores.
+                                <br>
+                                <p class="text-secondary"> C | Sockets | Networking | Linux</p>
+                            </p>
+
+                            <a href="https://github.com/RomanLupiano/poll-chat-c" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Ver el código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-4">
                     <div class="card bg-black card-project">
                         <img src="media/projects/MicroservicesImage.webp" alt="Diagrama de la arquitectura de microservicios del proyecto" class="card-img-top">
                         <div class="card-body">
                             <h2>Red Social</h2>
                             <p>Backend de una red social basado en microservicios, con autenticación de usuarios y gestión de publicaciones.  
                                 Integrado con Google Cloud Storage para almacenamiento de imágenes.
-                                
-                                <br>Django Rest Framework | FastAPI | Google Cloud Platform | PostgreSQL | MongoDB 
+                                <br>
+                                <p class="text-secondary"> Django Rest Framework | FastAPI | Google Cloud Platform | PostgreSQL | MongoDB </p>
                             </p>
 
-                            <a href="https://github.com/RomanLupiano/Posts_Microservicio" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
+                            <a href="https://github.com/RomanLupiano/Posts_Microservicio" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Ver el código</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 p-4">
+                <div class="col-12 col-md-6 col-lg-4 p-4">
                     <div class="card bg-black card-project">
-                        <img src="media/projects/nreinas.webp" alt="El Problema de las N Reinas" class="card-img-top">
+                        <img src="media/projects/Nreinas.gif" alt="El Problema de las N Reinas" class="card-img-top">
                         <div class="card-body">
                             <h2>El Problema de las N Reinas</h2>
                             <p>Simulador del problema de las N reinas, se puede ver cómo el algoritmo busca y rechaza posibles soluciones del tablero.
-                                <br> HTML | CSS | Javascript
+                                <br> 
+                                <p class="text-secondary"> HTML | CSS | Javascript </p>
                             </p>
 
-                            <a href="https://github.com/RomanLupiano/NReinas" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
-                            <a href="https://romanlupiano.github.io/NReinas/" class="btn btn-light rounded-3 btn-sm" target="_blank">Visitar la página</a>
+                            <a href="https://github.com/RomanLupiano/NReinas" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Ver el código</a>
+                            <a href="https://romanlupiano.github.io/NReinas/" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Visitar la página</a>
 
                         </div>
                     </div>
                 </div>
-    
-                <div class="col-md-4 p-4">
-                    <div class="card bg-black card-project">
-                        <img src="media/projects/passwordgenerator.webp" alt="PasswordGenerator" class="card-img-top">
-                        <div class="card-body">
-                            <h2>Password Generator</h2>
-                            <p>Generador de contraseñas de una logitud determinable, 
-                                pudiendo elegir si se quiere añadir mayúsculas, carácteres especiales y/o números. 
-                                <br> HTML | CSS/Bootstrap | Javascript 
-                            </p>
-                            
-                            <a href="https://github.com/RomanLupiano/Password-Generator" class="btn btn-light rounded-3 btn-sm" target="_blank">Ver el código</a>
-                            <a href="https://romanlupiano.github.io/Password-Generator/" class="btn btn-light rounded-3 btn-sm" target="_blank">Visitar la página</a>
-                        </div>
-                    </div>
-                </div>
-        
             
             </div>
         </section>
@@ -116,25 +142,25 @@
             <h4 class="tech-category">Backend</h4>
             <div class="my-4 grid-container">
                 <div class="grid-item">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" height="100" class="icon my-2">
                     <div class="card-body">
                         <h4>Python</h4>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/353657/django-icon.svg" alt="Django" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django" height="100" class="icon my-2">
                         <div class="card-body">
                             <h4>Django</h4>
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="Flask" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" height="100" class="icon my-2">
                         <div class="card-body">
                             <h4>FastAPI</h4>
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/353805/google-cloud.svg" alt="Flask" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud Platform" height="100" class="icon my-2">
                         <div class="card-body">
                             <h4>Google Cloud Platform</h4>
                         </div>
@@ -145,25 +171,25 @@
             <h4 class="tech-category">Herramientas</h4>
             <div class="my-4 grid-container">
                 <div class="grid-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png" alt="html5" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" height="100" class="icon my-2">
                     <div class="card-body">
                         <h4>PostgreSQL</h4>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="css" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" height="100" class="icon my-2">
                         <div class="card-body">
                             <h4>MongoDB</h4>
                         </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/452192/docker.svg" alt="GitHub" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" height="100" class="icon my-2">
                     <div class="card-body">
                         <h4>Docker</h4>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/448236/linux.svg" alt="Postman" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" height="100" class="icon my-2">
                     <div class="card-body">
                         <h4>Linux</h4>
                     </div>
@@ -173,21 +199,21 @@
             <h4 class="tech-category">Frontend</h4>
             <div class="my-4 grid-container">
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/452228/html-5.svg" alt="html5" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="html5" height="100" class="icon my-2">
                     <div class="card-body">
                         <h4>HTML</h4>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/452185/css-3.svg" alt="css" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css" height="100" class="icon my-2">
                     <div class="card-body">
                         <h4>CSS</h4>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.svgrepo.com/show/353925/javascript.svg" alt="bootstrap" height="100" class="icon my-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="bootstrap" height="100" class="icon my-2">
                     <div class="card-body">
-                        <h4>Javascript</h4>
+                        <h4>JavaScript</h4>
                     </div>
                 </div>
             </div>
@@ -202,9 +228,9 @@
 
                 
                   <div class="certificate-list row my-2 text-center">
-                    <div class="certificate col-md-3 p-3" data-category="General">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="General">
                         <div class="card bg-secondary card-project">
-                            <img src="media/certificates/exaunicen.webp" alt="Ingeniería en Sistemas" class="card-img-top">
+                            <img src="media/certificates/exaunicen.webp" alt="Ingeniería en Sistemas" class="card-img-top" loading="lazy">
                                 <div class="card-body">
                                     <h2>Ingeniería de Sistemas</h2>
                                     <p>Universidad Nacional del Centro de la Provincia de Buenos Aires <br>
@@ -213,10 +239,10 @@
                         </div>
                     </div>
 
-                    <div class="certificate col-md-3 p-3" data-category="General">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="General">
                         <div class="card bg-black card-project">
-                            <a href="https://drive.google.com/file/d/1wzo9G796rp0MmwW278Sb13yp2POHtT9c/view?usp=sharing" target="_blank"> 
-                            <img src="media/certificates/CursoDocker.webp" alt="Curso Profesional de Docker" class="card-img-top"></a>
+                            <a href="https://drive.google.com/file/d/1wzo9G796rp0MmwW278Sb13yp2POHtT9c/view?usp=sharing" target="_blank" rel="noopener noreferrer"> 
+                            <img src="media/certificates/CursoDocker.webp" alt="Curso Profesional de Docker" class="card-img-top" loading="lazy"></a>
                                 <div class="card-body">
                                     <h2>Curso Profesional de Docker</h2>
                                     <p>Temas vistos:
@@ -228,55 +254,55 @@
                                     </p>
                                     <p>13 de mayo de 2024</p>
 
-                                    <a href="https://drive.google.com/file/d/1wzo9G796rp0MmwW278Sb13yp2POHtT9c/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                    <a href="https://drive.google.com/file/d/1wzo9G796rp0MmwW278Sb13yp2POHtT9c/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Certificado</a>
                                 </div>
                         </div>
                     </div>
 
-                    <div class="certificate col-md-3 p-3" data-category="Databases">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="Databases">
                         <div class="card bg-black card-project">
-                            <a href="https://drive.google.com/file/d/1PqjuocpxWA2jFxq0NqcqT1Hz-lKbMXo6/view?usp=sharing" target="_blank">
-                            <img src="media/certificates/TallerReplicacionBD1.webp" alt="Taller de replicación de bases de datos SQL" class="card-img-top"></a>
+                            <a href="https://drive.google.com/file/d/1PqjuocpxWA2jFxq0NqcqT1Hz-lKbMXo6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="media/certificates/TallerReplicacionBD1.webp" alt="Taller de replicación de bases de datos SQL" class="card-img-top" loading="lazy"></a>
                                 <div class="card-body">
                                     <h2>Taller de replicación de bases de datos SQL</h2>
                                     <p>Se configuró la replicación Master/Slave en bases de datos MySQL en servidores de DigitalOcean</p>
                                     <p>28 de abril de 2024</p>
 
-                                    <a href="https://drive.google.com/file/d/1PqjuocpxWA2jFxq0NqcqT1Hz-lKbMXo6/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                    <a href="https://drive.google.com/file/d/1PqjuocpxWA2jFxq0NqcqT1Hz-lKbMXo6/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Certificado</a>
                                 </div>
                         </div>
                     </div>
 
-                    <div class="certificate col-md-3 p-3" data-category="General">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="General">
                         <div class="card bg-black card-project">
-                            <a href="https://drive.google.com/file/d/1G2pLdyEl_OtyEt_MGptxT0EOjmuYrAWF/view?usp=sharing" target="_blank">
-                            <img src="media/certificates/CursoGoogleCloud.webp" alt="Curso Google Cloud Platform" class="card-img-top"></a>
+                            <a href="https://drive.google.com/file/d/1G2pLdyEl_OtyEt_MGptxT0EOjmuYrAWF/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <img src="media/certificates/CursoGoogleCloud.webp" alt="Curso Google Cloud Platform" class="card-img-top" loading="lazy"></a>
                                 <div class="card-body">
                                     <h2>Google Cloud Computing Foundations</h2>
                                     <p>De febrero a marzo de 2024</p>
 
-                                    <a href="https://drive.google.com/file/d/1G2pLdyEl_OtyEt_MGptxT0EOjmuYrAWF/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                    <a href="https://drive.google.com/file/d/1G2pLdyEl_OtyEt_MGptxT0EOjmuYrAWF/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Certificado</a>
                                 </div>
                         </div>
                     </div>
     
-                    <div class="certificate col-md-3 p-3" data-category="Databases">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="Databases">
                         <div class="card bg-black card-project" >
-                            <a href="https://www.udemy.com/certificate/UC-344ac04a-0c8e-4351-a921-98d10a9aa425/" target="_blank">
-                            <img src="media/certificates/sql-consultas.webp" alt="SQL: consultas básicas a complejas" class="card-img-top"></a>
+                            <a href="https://www.udemy.com/certificate/UC-344ac04a-0c8e-4351-a921-98d10a9aa425/" target="_blank" rel="noopener noreferrer">
+                            <img src="media/certificates/sql-consultas.webp" alt="SQL: consultas básicas a complejas" class="card-img-top" loading="lazy"></a>
                             <div class="card-body">
                                 <h2>SQL: consultas básicas a complejas</h2>
                                 <p>28 de febrero de 2023</p>
                                 
-                                <a href="https://www.udemy.com/certificate/UC-344ac04a-0c8e-4351-a921-98d10a9aa425/" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                <a href="https://www.udemy.com/certificate/UC-344ac04a-0c8e-4351-a921-98d10a9aa425/" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Certificado</a>
                             </div>
                         </div>
                     </div>
     
-                    <div class="certificate col-md-3 p-3" data-category="Python">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="Python">
                         <div class="card bg-black card-project">
-                            <a href="https://pub.coderhouse.com/legacy-certificates/6292b97b2b26090024639669?lang=es" target="_blank">
-                            <img src="media/certificates/curso-de-python-marcos-roman-lupiano.webp" alt="Curso de Python" class="card-img-top"></a>
+                            <a href="https://pub.coderhouse.com/legacy-certificates/6292b97b2b26090024639669?lang=es" target="_blank" rel="noopener noreferrer">
+                            <img src="media/certificates/curso-de-python-marcos-roman-lupiano.webp" alt="Curso de Python" class="card-img-top" loading="lazy"></a>
                             <div class="card-body">
                                 <h2>Curso de Python</h2>
                                 <p>Tecnologías aprendidas:
@@ -286,21 +312,21 @@
                                     <br>- Git y GitHub.</p>
                                 <p>De enero a abril de 2022</p>
                                 
-                                <a href="https://pub.coderhouse.com/legacy-certificates/6292b97b2b26090024639669?lang=es" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                <a href="https://pub.coderhouse.com/legacy-certificates/6292b97b2b26090024639669?lang=es" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Certificado</a>
                             </div>
                         </div>
                     </div>
     
-                    <div class="certificate col-md-3 p-3" data-category="General">
+                    <div class="certificate col-12 col-md-6 col-lg-3 p-3" data-category="General">
                         <div class="card bg-black card-project">
-                            <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" target="_blank"> 
-                            <img src="media/certificates/asistente-en-informatica.webp" alt="Asistente en informatica" class="card-img-top"> </a>
+                            <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" target="_blank" rel="noopener noreferrer"> 
+                            <img src="media/certificates/asistente-en-informatica.webp" alt="Asistente en informatica" class="card-img-top" loading="lazy"> </a>
                                 <div class="card-body">
                                 <h2>Asistente en informática</h2>
-                                <p>Itinerario Formativo en los últimos tres años de la secundaria sobre Informática.
+                                <p>Itinerario Formativo en los últimos tres años de la secundaria sobre Informática.</p>
                                 <p>2018 - 2020</p>
                                 
-                                <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank">Certificado</a>
+                                <a href="https://drive.google.com/file/d/1b9IzoyiyR1PLM8S9J-lpvUcm-R9cf8Bq/view?usp=sharing" class="btn btn-light rounded-3 btn-sm" target="_blank" rel="noopener noreferrer">Certificado</a>
                             </div>
                         </div>
                     </div>
@@ -311,8 +337,8 @@
 
     <footer class="bg-dark text-center text-white">
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            Código del portfolio en mi <a href="https://github.com/RomanLupiano/RomanLupiano.github.io" target=”_blank” >
-                <img src="media/tech/github-color-svgrepo-com.svg" alt="GitHub" height="20" class="mb-2 mx-1">
+            Código del portfolio en mi <a href="https://github.com/RomanLupiano/RomanLupiano.github.io" target="_blank" rel="noopener noreferrer" >
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" height="20" class="mb-2 mx-1">
             </a>
         </div>
     </footer>

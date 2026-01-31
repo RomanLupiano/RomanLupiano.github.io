@@ -1,5 +1,5 @@
 body {
-    background: #090909;
+    background: #0b0b0b;
     color: white;
 }
 
@@ -11,14 +11,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 10px;
-  background-color: #090909;
   justify-items: center;
-}
-
-@media (max-width: 400px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 
@@ -57,5 +50,6 @@ body {
 .responsive {
   width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: 250px;
+  object-fit: cover;
 }
